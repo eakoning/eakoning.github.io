@@ -2,3 +2,7 @@ name: Emiel Koning
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 paginate: 3
+
+# Plugins
+whitelist: []
+gems:      [jekyll-paginate]
