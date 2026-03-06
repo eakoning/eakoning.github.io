@@ -1,0 +1,16 @@
+title: Pieter
+description: Senior Software Engineer
+baseurl: ""
+url: ""
+
+collections:
+  opdrachten:
+    output: true
+    permalink: /opdrachten/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: opdrachten
+    values:
+      layout: opdracht
