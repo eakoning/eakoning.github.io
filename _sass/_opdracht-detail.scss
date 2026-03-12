@@ -1,0 +1,64 @@
+.opdracht-page .case-meta {
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $color-muted;
+  margin-bottom: 1.5rem;
+}
+
+.opdracht-page h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: $color-bright;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin-bottom: 2rem;
+}
+
+.opdracht-page .case-body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: $color-text;
+}
+
+.opdracht-page .case-body p + p {
+  margin-top: 1.2em;
+}
+
+.opdracht-page .tags {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.opdracht-page .tag {
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border: 1px solid $color-tag-border;
+  padding: 0.3em 0.8em;
+  color: $color-muted;
+  border-radius: 2px;
+}
+
+.opdracht-page .back {
+  display: inline-block;
+  margin-bottom: 3rem;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $color-muted;
+  transition: color 0.3s ease;
+}
+
+.opdracht-page .back:hover {
+  color: $color-bright;
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .opdracht-page h1 {
+    font-size: 28px;
+  }
+}

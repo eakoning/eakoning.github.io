@@ -1,0 +1,72 @@
+.opdrachten-list {
+  list-style: none;
+  max-width: $content-width;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.opdrachten-list li {
+  border-top: 1px solid $color-border;
+  padding: 1.8rem 0;
+}
+
+.opdrachten-list li:last-child {
+  border-bottom: 1px solid $color-border;
+}
+
+.opdracht-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 2rem;
+}
+
+.opdracht-link h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: $color-bright;
+  letter-spacing: -0.01em;
+  transition: color 0.3s ease;
+}
+
+.opdracht-link:hover h2 {
+  color: #ffffff;
+}
+
+.opdracht-link .period {
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $color-muted;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.opdracht-summary {
+  margin-top: 0.5rem;
+  font-size: 14px;
+  font-weight: 400;
+  color: $color-muted;
+  line-height: 1.6;
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .opdrachten-list {
+    padding: 0 1rem;
+  }
+
+  .opdracht-link {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+
+  .opdracht-link .period {
+    white-space: normal;
+  }
+
+  .opdracht-link h2 {
+    font-size: 17px;
+    line-height: 1.35;
+  }
+}

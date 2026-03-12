@@ -1,0 +1,16 @@
+.home-title {
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  color: $color-bright;
+  letter-spacing: -0.03em;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .home-title {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+}
