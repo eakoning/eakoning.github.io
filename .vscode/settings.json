@@ -2,5 +2,6 @@
   "files.exclude": {
     "_site": true,
     "Gemfile.lock": true
-  }
+  },
+  "scss.validate": true
 }

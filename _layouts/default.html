@@ -12,8 +12,11 @@
 <body class="default-page">
 
   <nav>
-    <a href="/" {% if page.url == "/" %}class="active"{% endif %}>Home</a>
-    <a href="/opdrachten/" {% if page.url contains "/opdrachten" %}class="active"{% endif %}>Opdrachten</a>
+    {% if page.url contains "/opdrachten" %}
+    <a href="/">Terug</a>
+    {% else %}
+    <a href="/opdrachten/">Opdrachten</a>
+    {% endif %}
   </nav>
 
   <main>
